@@ -8,4 +8,5 @@ user_guess = "apple"
 embeddings = model.encode([secret_word, user_guess])
 similarity = util.cos_sim(embeddings[0], embeddings[1])
 
+print("hi")
 print(f"Similarity score: {similarity.item():.4f}")
